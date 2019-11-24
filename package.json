@@ -1,0 +1,23 @@
+{
+  "name": "acessibility-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "rm -rf cypress/report && cypress run --reporter mochawesome --reporter-options reportDir=cypress/report,overwrite=false,html=false,json=true",
+    "cypress:report:merge": "node cypress/util/merge.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axe-core": "^3.4.0",
+    "cypress": "^3.6.1",
+    "cypress-axe": "git@github.com:chit786/cypress-axe.git",
+    "mocha": "5.2.0",
+    "mochawesome": "3.1.1",
+    "mochawesome-merge": "1.0.5"
+  }
+}
