@@ -1,4 +1,4 @@
 node_modules
-cypress/report
+# cypress/report
 cypress/videos
 cypress/screenshots

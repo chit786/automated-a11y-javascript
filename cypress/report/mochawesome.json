@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-11-24T14:18:19.729Z",
+    "end": "2019-11-24T14:18:22.163Z",
+    "duration": 2434,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "4864926f-b57c-4275-875d-528f789df02a",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "9ac52121-2484-4e3a-944f-db62518c504e",
+        "title": "HomePage",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should be accesible",
+            "fullTitle": "HomePage should be accesible",
+            "duration": 2397,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "context": "[\n  {\n    \"title\": \"\\\"moderate\\\"-\\\"heading-order\\\"-\\\"\\\"-\\\"Heading levels should only increase by one\\\"-\\\"https://dequeuniversity.com/rules/axe/3.4/heading-order?application=axeAPI\",\n    \"value\": [\n      {\n        \"any\": [\n          {\n            \"id\": \"heading-order\",\n            \"data\": 3,\n            \"relatedNodes\": [],\n            \"impact\": \"moderate\",\n            \"message\": \"Heading order invalid\"\n          }\n        ],\n        \"all\": [],\n        \"none\": [],\n        \"impact\": \"moderate\",\n        \"html\": \"<h3 class=\\\"fl-heading\\\">\\n\\t\\t<span class=\\\"fl-heading-text\\\">For Companies</span>\\n\\t</h3>\",\n        \"target\": [\n          \".fl-node-5d7c1d1ca2463 > .fl-module-content.fl-node-content > h3\"\n        ],\n        \"failureSummary\": \"Fix any of the following:\\n  Heading order invalid\"\n      }\n    ]\n  },\n  {\n    \"title\": \"\\\"moderate\\\"-\\\"landmark-unique\\\"-\\\"\\\"-\\\"Ensures landmarks are unique\\\"-\\\"https://dequeuniversity.com/rules/axe/3.4/landmark-unique?application=axeAPI\",\n    \"value\": [\n      {\n        \"any\": [\n          {\n            \"id\": \"landmark-is-unique\",\n            \"data\": {\n              \"role\": \"navigation\",\n              \"accessibleText\": null\n            },\n            \"relatedNodes\": [\n              {\n                \"html\": \"<nav class=\\\"main-navigation--right\\\">\",\n                \"target\": [\n                  \".main-navigation--right\"\n                ]\n              }\n            ],\n            \"impact\": \"moderate\",\n            \"message\": \"The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\"\n          }\n        ],\n        \"all\": [],\n        \"none\": [],\n        \"impact\": \"moderate\",\n        \"html\": \"<nav id=\\\"site-navigation\\\" class=\\\"main-navigation\\\">\\n\\n                </nav>\",\n        \"target\": [\n          \"#site-navigation\"\n        ],\n        \"failureSummary\": \"Fix any of the following:\\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\"\n      }\n    ]\n  }\n]",
+            "code": "// in first argument you can pass a locator\n// more details about the first 3 arguments can be found at : https://www.deque.com/axe/axe-for-web/documentation/api-documentation/#parameters-axerun\ncy.checkA11y(null, null, null, Cypress.env('a11y').skipFailures);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3c282d8d-dcd7-44a0-904b-7bae47aff931",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "3c282d8d-dcd7-44a0-904b-7bae47aff931"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2397,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}
